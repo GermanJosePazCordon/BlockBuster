@@ -1,0 +1,8 @@
+drop database db2;
+create database db2;
+\c db2;
+\i /tmp/Practica/Tmp.sql
+COPY Tmp FROM '/tmp/Practica/BlockbusterData.csv' (FORMAT 'csv', DELIMITER ';', NULL '-', HEADER 'true');
+\i /tmp/Practica/Tablas.sql
+\i /tmp/Practica/LlenarTablas.sql
+\i /tmp/Practica/Contadores.sql

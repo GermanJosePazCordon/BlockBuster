@@ -56,8 +56,8 @@ from Tmp
 WHERE NOMBRE_PELICULA IS NOT NULL;
 
 ------------------------------ TABLA STOCK -----------------------------------------
-insert into Stock (id_tienda, id_pelicula)
-select distinct id_tienda, id_pelicula
+insert into Stock (cantidad, id_tienda, id_pelicula)
+select distinct  count(*), id_tienda, id_pelicula
 from Tmp
 inner join Tienda on TIENDA_PELICULA = Tienda.nombre
 inner join Pelicula on NOMBRE_PELICULA = titulo

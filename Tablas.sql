@@ -59,6 +59,7 @@ create table Pelicula(
 
 create table Stock(
   id_stock serial PRIMARY KEY,
+  cantidad int,
   id_tienda int,
   id_pelicula int,
   CONSTRAINT fk_Tienda_Stock FOREIGN KEY (id_tienda) REFERENCES Tienda (id_tienda),
