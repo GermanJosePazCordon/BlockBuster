@@ -125,7 +125,7 @@ and upper(categoria.categoria) <> 'HORROR'
 group by Pais.id_pais, Ciudad, Categoria.categoria),
 comparador as (select rentas_otros.ciudad, max(rentas_otros.count) 
 from rentas_otros
-group rentas_otros.ciudad)
+group by rentas_otros.ciudad)
 select rentas_horror.pais, rentas_horror.ciudad
 from comparador, rentas_horror
 where comparador.ciudad = rentas_horror.ciudad and rentas_horror.count >= comparador.max 

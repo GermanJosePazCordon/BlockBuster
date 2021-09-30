@@ -1,0 +1,15 @@
+drop table Pais cascade;
+drop table Ciudad cascade;
+drop table Tienda cascade;
+drop table Cliente cascade;
+drop table Empleado cascade;
+drop table Pelicula cascade;
+drop table Stock cascade;
+drop table Alquiler cascade;
+drop table Actor cascade;
+drop table Categoria cascade;
+drop table Idioma cascade;
+drop table Reparto cascade;
+drop table Genero cascade;
+drop table Traduccion cascade;
+commit;

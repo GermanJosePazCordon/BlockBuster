@@ -119,3 +119,5 @@ create table Traduccion(
   CONSTRAINT fk_Idioma_Stock FOREIGN KEY (id_idioma) REFERENCES Idioma (id_idioma),
   CONSTRAINT fk_Pelicula_Stock FOREIGN KEY (id_pelicula) REFERENCES Pelicula (id_pelicula)
 );
+
+commit;

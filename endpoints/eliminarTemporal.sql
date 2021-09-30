@@ -1,0 +1,2 @@
+truncate table tmp;
+commit;
